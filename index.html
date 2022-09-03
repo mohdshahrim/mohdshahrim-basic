@@ -5,22 +5,28 @@
 <head>
     <title>mohdshahrim.com</title>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css'>
+    <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name="description" content="the official website of M. Shahrim" />
 </head>
 
 <body>
     <main class="main-padding">
+        <div class="simple-message">
+            <span class="simple-message-close" onclick="this.parentElement.style.display='none'">&times;</span>
+            <p>There's so much to change and improve on this website. Sorry for the mess! 🙏🙏🙏</p>
+        </div>
         <div class="header">
             <div class="profile">
                 <img draggable="false" style="opacity:1" src="avatar_hat.jpg">
             </div>
+            <div class="caption">
+                <h1>Mohamad Shahrim</h1>
+                <p class="p-about">
+                    A programmer from Sibu, Sarawak
+                </p>
+            </div>
         </div>
-
-        <h1>Mohamad Shahrim</h1>
-        <p class="p-about">
-            A programmer from Sibu, Sarawak
-        </p>
         <br>
         <br>
         <h4>
@@ -34,14 +40,18 @@
             Links
         </h4>
         <p class="p-about">LinkedIn <a href="https://linkedin.com/in/mohdshahrim">https://linkedin.com/in/mohdshahrim</a></p>
-        <p class="p-about">Github (coming soon)</p>
+        <p class="p-about">Github <a href="https://github.com/mohdshahrim">https://github.com/mohdshahrim</a></p>
         <br>
         <h4>
-            Projects I Made (coming soon)
+            Tech in my skillset
         </h4>
-        <p class="p-about">ThioJoe Computer Quiz <a href="#">#</a></p>
-        <p class="p-about">Claim Form Maker <a href="#">#</a></p>
-        <div class="footer-pad"></div>
+        <p class="p-about">PHP, JavaScript, Python, Golang</p>
+        <p class="p-about">my strongest tech: <b>CodeIgniter 4</b></p>
+        <p class="p-about">currently learning: <b>Angular</b> and <b>C#</b> during free time</p>
+        <div class="footer-pad">
+            <p class="footer-pad-text">I made this site using HTML and CSS</p>
+            <p class="footer-pad-text">styled using <a href="https://github.com/kognise/water.css">watercss</a> (MIT license)</p>
+        </div>
     </main>
 </body>
 
@@ -51,35 +61,50 @@
             padding-left: 10px;
         }
     }
+    .simple-message {
+        color: #f0f1f2;
+        background-color: #3f4042!important;
+        border: 1px dotted #6e7072;
+        padding: 1em;
+        border-radius: 10px;
+        position: relative;
+    }
+    .simple-message-close {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
     .p-about {
         color: #aaa;
         display: block;
         margin: 10px 0;
-        line-height: 10px;
+        line-height: 0.8em;
     }
     .header {
         padding-top: 50px;
-        display: flex;
         flex-direction: row;
         align-items: center;
     }
     .profile {
-        position: relative;
-        border-radius: 50%;
-        background-color: var(--backgroundColor);
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0px;
     }
     .profile img {
-        position: relative;
-        width: 25%;
-        height: auto;
-        -o-object-fit: cover;
-        object-fit: cover;
         border-radius: 50%;
-        left: 0;
-        top: 0;
+    }
+    .caption {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 5px;
     }
     .footer-pad {
-        padding-bottom: 50px;
+        padding: 50px;
+    }
+    .footer-pad-text {
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 0.5em;
     }
 </style>
 
