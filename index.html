@@ -16,6 +16,9 @@
             <span class="simple-message-close" onclick="this.parentElement.style.display='none'">&times;</span>
             <p>There's so much to change and improve on this website. Sorry for the mess! 🙏🙏🙏</p>
         </div>
+
+
+        <!-- HEADER SECTION -->
         <div class="header">
             <div class="profile">
                 <img draggable="false" style="opacity:1" src="avatar_hat.jpg">
@@ -28,7 +31,17 @@
             </div>
         </div>
         <br>
+        <nav>
+            <a href="/" class="a-menu">Home</a>
+            <a href="#" class="a-menu">Projects</a>
+            <a href="#" class="a-menu">Blog</a>
+            <a href="#" class="a-menu">Snippets</a>
+        </nav>
         <br>
+        <br>
+
+
+        <!-- MAIN CONTENT SECTION -->
         <h4>
             About
         </h4>
@@ -45,9 +58,13 @@
         <h4>
             Tech in my skillset
         </h4>
-        <p class="p-about">PHP, JavaScript, Python, Golang</p>
+        <p class="p-about">PHP, JavaScript, Python, Golang, MySQL, SQlite</p>
         <p class="p-about">my strongest tech: <b>CodeIgniter 4</b></p>
         <p class="p-about">currently learning: <b>Angular</b> and <b>C#</b> during free time</p>
+        <br>
+
+
+        <!-- FOOTER SECTION -->
         <div class="footer-pad">
             <p class="footer-pad-text">I made this site using HTML and CSS</p>
             <p class="footer-pad-text">styled using <a href="https://github.com/kognise/water.css">watercss</a> (MIT license)</p>
@@ -59,6 +76,9 @@
     @media only screen  and (max-device-width: 1000px) and (orientation: portrait) {
         .main-padding {
             padding-left: 10px;
+        }
+        .profile > img {
+            transform: scale(0.9);
         }
     }
     .simple-message {
@@ -81,22 +101,29 @@
         line-height: 0.8em;
     }
     .header {
+        display: flex;
         padding-top: 50px;
-        flex-direction: row;
-        align-items: center;
+    }
+    .a-menu {
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 1em;
+        color: #f0f1f2;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
     }
     .profile {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 0px;
+        flex: 1;
+        max-width: fit-content;
+        padding-right: 10px;
     }
     .profile img {
         border-radius: 50%;
     }
     .caption {
-        display: inline-block;
-        vertical-align: top;
-        padding-left: 5px;
+        flex: 1;
     }
     .footer-pad {
         padding: 50px;
